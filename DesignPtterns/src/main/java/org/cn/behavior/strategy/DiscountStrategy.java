@@ -1,4 +1,4 @@
-package org.cn.strategy;
+package org.cn.behavior.strategy;
 
 /**
  * 策略模式用于封装系列的算法， 这些算法通常被封装在一个被称为Context的类中，

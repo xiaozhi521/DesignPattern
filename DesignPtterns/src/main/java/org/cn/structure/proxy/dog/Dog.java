@@ -1,4 +1,4 @@
-package org.cn.proxy.dog;
+package org.cn.structure.proxy.dog;
 
 /**
  * 模拟实现动态代理

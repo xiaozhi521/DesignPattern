@@ -1,4 +1,4 @@
-package org.cn.proxy.image;
+package org.cn.structure.proxy.image;
 
 public class BigImage implements Image {
 

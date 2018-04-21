@@ -1,4 +1,4 @@
-package org.cn.proxy.dog;
+package org.cn.structure.proxy.dog;
 
 /**
  *  假设该目标对象实例的两个方法不能满足实际需要，

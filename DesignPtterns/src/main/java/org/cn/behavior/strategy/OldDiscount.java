@@ -1,4 +1,4 @@
-package org.cn.strategy;
+package org.cn.behavior.strategy;
 
 /**
  * 为 DiscountStrategy 接口提供一个 Old 打折的算法

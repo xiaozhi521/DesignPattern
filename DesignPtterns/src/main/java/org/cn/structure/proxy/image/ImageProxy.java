@@ -1,4 +1,4 @@
-package org.cn.proxy.image;
+package org.cn.structure.proxy.image;
 
 /**
  * 这是 bigIamge 的代理对象

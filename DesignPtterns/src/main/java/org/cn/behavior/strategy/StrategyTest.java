@@ -1,4 +1,4 @@
-package org.cn.strategy;
+package org.cn.behavior.strategy;
 
 public class StrategyTest {
     public static void main(String[] args) {

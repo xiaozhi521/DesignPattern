@@ -1,4 +1,4 @@
-package org.cn.proxy.dog;
+package org.cn.structure.proxy.dog;
 
 import java.lang.reflect.Proxy;
 

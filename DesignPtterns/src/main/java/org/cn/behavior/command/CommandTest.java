@@ -1,4 +1,4 @@
-package org.cn.command;
+package org.cn.behavior.command;
 
 public class CommandTest {
     public static void main(String[] args) {
