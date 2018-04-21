@@ -3,12 +3,14 @@ package org.cn.strategy;
 public class DiscountContext {
     //组合一个DiscountStrategy 对象
     private DiscountStrategy strategy;
-    // 构造器
+    // 构造器，传入一个 DiscountStrategy 对象
     public DiscountContext(DiscountStrategy strategy) {
         this.strategy = strategy;
     }
 
+    //根据实际所用的 DiscountStrategy 对象得到折扣价
     public double getDiscountPrice(double price){
+        //如果 strategy == null 系统自动选择 OldDiscount 类
         if(strategy == null){
             strategy = new OldDiscount();
         }
