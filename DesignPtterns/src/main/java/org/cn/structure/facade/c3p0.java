@@ -121,14 +121,16 @@ public class c3p0 {
 	 * @param deptno
 	 * @return
 	 */
-	public static boolean login1(String name,String deptno){
+	public static boolean login1(String name,String deptno) {
 		Connection conn = null;
+		Statement st = null;
+		ResultSet rs = null;
 		String sql  = "select ename from emp_mqf where ename = '"+name+"'and deptno = '"+deptno+"'";
 		System.out.println(sql);
 		try {
 			conn = DBCP.getConnection();
-			Statement st = conn.createStatement();
-			ResultSet rs = st.executeQuery(sql);
+			st = conn.createStatement();
+			rs = st.executeQuery(sql);
 			int  n =-1;
 			while(rs.next()){
 				n = rs.getInt(1);
@@ -143,6 +145,20 @@ public class c3p0 {
 		} catch (Exception e) {
 			return false;
 		}finally{
+			if(st != null){
+				try {
+					st.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if(rs != null){
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
 			if(conn != null){
 				try {
 					conn.close();
@@ -193,7 +209,7 @@ public class c3p0 {
 	}
 	/**
 	 * 2015年10月27日
-	 * 这个方法是封装要打印的DQL语句
+	 * 这个方法是封装要打印的SQL语句
 	 *
 	 * @param sql
 	 */
@@ -233,7 +249,6 @@ public class c3p0 {
 	public static void BalanceCount(String sql,String sql1){
 		Connection conn = null;
 		try {
-
 			conn = c3p0.getConnection();
 			//设置自动提交为fasle
 			conn.setAutoCommit(false);
