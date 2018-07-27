@@ -9,14 +9,17 @@ public class ConcreteBuilder implements Builder {
     Part partA, partB, partC;
     public void buildPartA() {
         //这里是具体如何构建partA 的代码
+        System.out.println("创建 partA");
     }
 
     public void buildPartB() {
         //这里是具体如何构建partA 的代码
+        System.out.println("创建 partB");
     }
 
     public void buildPartC() {
         //这里是具体如何构建partA 的代码
+        System.out.println("创建 partC");
     }
 
     public Product getResult() {
