@@ -1,4 +1,4 @@
-package org.cn.behavior.strategy;
+package org.cn.behavior.strategy.test2;
 
 public class DiscountContext {
     //组合一个DiscountStrategy 对象

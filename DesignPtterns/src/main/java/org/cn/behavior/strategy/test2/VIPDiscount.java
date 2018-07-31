@@ -1,4 +1,4 @@
-package org.cn.behavior.strategy;
+package org.cn.behavior.strategy.test2;
 
 /**
  * 为 DiscountStrategy 接口提供一个 VIP 打折的算法
