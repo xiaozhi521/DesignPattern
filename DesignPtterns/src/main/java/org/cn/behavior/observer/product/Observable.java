@@ -1,4 +1,4 @@
-package org.cn.behavior.observer;
+package org.cn.behavior.observer.product;
 
 import java.util.ArrayList;
 import java.util.List;

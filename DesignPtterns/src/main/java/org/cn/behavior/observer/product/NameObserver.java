@@ -1,4 +1,4 @@
-package org.cn.behavior.observer;
+package org.cn.behavior.observer.product;
 
 public class NameObserver implements Observer {
     public void update(Observer Observer, Object object) {

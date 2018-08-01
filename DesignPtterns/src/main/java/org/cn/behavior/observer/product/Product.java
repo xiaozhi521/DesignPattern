@@ -1,4 +1,4 @@
-package org.cn.behavior.observer;
+package org.cn.behavior.observer.product;
 
 public class Product extends Observable {
     //定义两个成员变量
