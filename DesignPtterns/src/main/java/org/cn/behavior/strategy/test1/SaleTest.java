@@ -8,7 +8,8 @@ public class SaleTest {
         List<XiaoShouSale> xiaoShouSales = new ArrayList<XiaoShouSale>();
         xiaoShouSales.add(new PVIPUser());
         xiaoShouSales.add(new VIPUser());
+        xiaoShouSales.add(new SVIPUser());
         XiaoShouSaleService shouSaleService = new XiaoShouSaleService(xiaoShouSales);
-        shouSaleService.getSale("VIP","sale");
+        shouSaleService.getSale("SVIP","sale");
     }
 }
