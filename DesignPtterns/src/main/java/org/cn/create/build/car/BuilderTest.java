@@ -1,4 +1,4 @@
-package org.cn.create.build;
+package org.cn.create.build.car;
 
 public class BuilderTest {
     public static void main(String[] args) {

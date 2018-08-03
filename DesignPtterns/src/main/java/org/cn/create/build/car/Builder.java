@@ -1,4 +1,4 @@
-package org.cn.create.build;
+package org.cn.create.build.car;
 
 public interface Builder {
     //创建部件A   比如创建汽车车轮
