@@ -1,4 +1,4 @@
-package org.cn.behavior.templte.order_jdk;
+package org.cn.behavior.templte.order_jdk1;
 
 import java.util.Observable;
 
