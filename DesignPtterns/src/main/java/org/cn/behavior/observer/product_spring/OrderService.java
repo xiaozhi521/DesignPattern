@@ -13,6 +13,8 @@ public class OrderService {
     /** 创建订单 **/
     public void saveOrder(String name){
         System.out.println("恭喜【" + name + "】购买产品a 成功！！");
-        applicationContext.publishEvent(new OrderEvent(new Object()));
+        OrderEvent orderEvent = new OrderEvent(this);
+        orderEvent.setMsg(name);
+        applicationContext.publishEvent(orderEvent);
     }
 }
