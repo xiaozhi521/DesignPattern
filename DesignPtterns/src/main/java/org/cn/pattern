@@ -11,3 +11,18 @@
     行为模式主要有10种：
         命令模式（6.finish）、解释器模式、迭代器模式（Iterator 就是最好的例子）、中介者模式、备忘录模式、观察者模式（7.finish）、状态模式、策略模式（8.finish）、模板模式、访问者模式
 
+设计原则：
+    单一职责原则（Single Responsiblity Principle SRP）
+        一个类只负责一个功能领域中的相应的职责。高内聚，低耦合。（封装）
+    开闭原则（Open Closed Principle,OCP）
+        对扩展开放，对修改关闭。不修改原有代码的情况下进行扩张。（封装，继承）
+    里氏代换原则（Liskov Substitution Principle，LSP）
+        所有引用基类（父类）的地方必须能透明的使用其子类对象。（多态，继承）
+    依赖倒转原则（Dependency Inversion Principle，DIP）
+        抽象不应该依赖细节，细节应该依赖于抽象。要针对接口编程，而不是针对实现编程（多态，继承）
+    接口隔离原则（Interface Segregation Principle，ISP）
+        接口拆分。当一个接口太大时，我们需要将它分割成一些更细小的接口。（多态，继承）
+    迪米特法则（Principle of Least Knowledge，PLK）
+        减少依赖。一个软件实体应当尽可能减少的与其他实体发生相互作用。（封装）
+
+
