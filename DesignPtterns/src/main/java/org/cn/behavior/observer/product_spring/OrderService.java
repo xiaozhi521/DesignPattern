@@ -16,5 +16,6 @@ public class OrderService {
         OrderEvent orderEvent = new OrderEvent(this);
         orderEvent.setMsg(name);
         applicationContext.publishEvent(orderEvent);
+
     }
 }

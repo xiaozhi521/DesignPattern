@@ -19,5 +19,7 @@ public class Application {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
         OrderService orderService = context.getBean(OrderService.class);
         orderService.saveOrder("榛子");
+        PackageService packageService = context.getBean(PackageService.class);
+        packageService.createpackage("榛子","EMS");
     }
 }

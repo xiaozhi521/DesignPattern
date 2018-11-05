@@ -5,11 +5,11 @@ import org.springframework.context.event.SmartApplicationListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SmsListener implements SmartApplicationListener {
+public class FastMailListener implements SmartApplicationListener {
     //监听哪一种事件
     @Override
     public boolean supportsEventType(Class<? extends ApplicationEvent> aClass) {
-        return aClass == OrderEvent.class;
+        return aClass == PackageEvent.class;
     }
 
     @Override
@@ -20,13 +20,13 @@ public class SmsListener implements SmartApplicationListener {
     //当事件发生时执行
     @Override
     public void onApplicationEvent(ApplicationEvent applicationEvent) {
-        System.out.println("创建订单成功，开始打包操作");
+        System.out.println("打包成功，开始发送快递操作");
     }
 
     //定义多个监听者的执行顺序
     @Override
     public int getOrder() {
         //值越大，顺序越往后
-        return 60;
+        return 30;
     }
 }
