@@ -1,15 +1,24 @@
-创建型：
+创建型：工具类常用
+    用来创建对象的模式，抽象了实例化的过程。
     创建对象时，不在直接实例化对象；而是根据特定场景，有程序来确定创建对象的方式，从而保证更高的性能、更好的架构优势。
     创建型模式主要有四种：
-        工厂模式（简单工厂模式、工厂方法、抽象工厂模式）、单例模式（1.finish）、建造模式（2.finish）、原型模式
+        工厂模式（简单工厂模式<Factory Pattern>、工厂方法、抽象工厂模式<Abstract Factory Pattern>）、
+        单例模式<Singleton>（1.finish）、建造模式<Builder Pattern>（2.finish）、原型模式<Prototype Pattern>
 
-结构型：用于帮助将多个对象组织成更大的结构。
+结构型：组件内部常用
+    关注类和对象的组合。继承的概念被用来组合和定义组合对象获得新功能的方式。
+    用于帮助将多个对象组织成更大的结构。
     结构型模式主要有七种：
-        适配器模式(9.finish)、桥接模式（3.finish）、组合器模式、装饰器模式、门面模式（4.finish）、享元模式、代理模式（5.finish）
+        适配器模式<Adapter Pattern>(9.finish)、桥接模式<Bridge Pattern>（3.finish）、组合器模式<Composite Pattern>、
+        装饰器模式<Decorator Pattern>、门面模式<Facade Pattern>（4.finish）、享元模式<Flyweight Pattern>、代理模式<Proxy Pattern>（5.finish）
 
-行为型：用于帮助系统间各对象的通信，以及如何控制复杂系统中的流程。
+行为型：业务编码常用
+    关注的是对象的行为，用来解决对象间的联系问题
+    用于帮助系统间各对象的通信，以及如何控制复杂系统中的流程。
     行为模式主要有10种：
-        命令模式（6.finish）、解释器模式、迭代器模式（Iterator 就是最好的例子）、中介者模式、备忘录模式、观察者模式（7.finish）、状态模式、策略模式（8.finish）、模板模式、访问者模式
+        命令模式<Command Pattern>（6.finish）、解释器模式<Interpreter Pattern>、迭代器模式<Iterator Pattern>（Iterator 就是最好的例子）、
+        中介者模式<Mediator Pattern>、备忘录模式<Memento Pattern>、观察者模式<Observer Pattern>（7.finish）、状态模式<State Pattern>、
+        策略模式<Strategy Pattern>（8.finish）、模板模式<Template Pattern>、访问者模式<Visitor Pattern>
 
 设计原则：
     单一职责原则（Single Responsiblity Principle SRP）
