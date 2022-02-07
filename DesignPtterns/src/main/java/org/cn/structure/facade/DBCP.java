@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 import javax.sql.DataSource;
-import org.apache.commons.dbcp.BasicDataSource;
+//import org.apache.commons.dbcp.BasicDataSource;
 
 /**
  * Apache DBCP
@@ -45,22 +45,22 @@ public class DBCP {
 		try {
 			pro = new Properties();
 			pro.load(new FileInputStream("db.properties"));
-			BasicDataSource ds = new BasicDataSource();
-			//加载资源
-			ds.setDriverClassName(pro.getProperty("jdbc.driver"));
-			ds.setUrl(pro.getProperty("jdbc.url"));
-			ds.setUsername(pro.getProperty("jdbc.user"));
-			ds.setPassword(pro.getProperty("jdbc.pwd"));
-			
-			//创建管理参数
-			//最大的活动数
-			ds.setMaxActive(Integer.parseInt(pro.getProperty("jdbc.active")));
-			//最大的等待时间
-			ds.setMaxWait(Integer.parseInt(pro.getProperty("jdbc.wait")));
-			/*
-			 * static静态块不能用this
-			 */
-			DBCP.ds = ds;
+//			BasicDataSource ds = new BasicDataSource();
+//			//加载资源
+//			ds.setDriverClassName(pro.getProperty("jdbc.driver"));
+//			ds.setUrl(pro.getProperty("jdbc.url"));
+//			ds.setUsername(pro.getProperty("jdbc.user"));
+//			ds.setPassword(pro.getProperty("jdbc.pwd"));
+//
+//			//创建管理参数
+//			//最大的活动数
+//			ds.setMaxActive(Integer.parseInt(pro.getProperty("jdbc.active")));
+//			//最大的等待时间
+//			ds.setMaxWait(Integer.parseInt(pro.getProperty("jdbc.wait")));
+//			/*
+//			 * static静态块不能用this
+//			 */
+//			DBCP.ds = ds;
 			
 			
 		} catch (Exception e) {
